@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <link rel="stylesheet" href="jquery.convform.css"> 
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}"> 
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='font-awesome.min.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            
+            <a href="/"><img src= "{{ url_for('static', filename='images/logo.png') }}" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/" style="color: #964B00;">HOME</a></li>
+                    <li><a href="index/about">ABOUT PROJECT</a></li>
+                    <li><a href="index/landslide">LANDSLIDE</a></li>
+                    <li><a href="index/history">HISTORY</a></li>
+                    <li><a href="index/prediction">PREDICTION</a></li>
+                    <li><a href="index/bot">SLOPEY</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>EW-LANDSLIDE</h1>
+            <p>With earthquakes there is basically no warning. <br>But advanced monitoring and warning of landslides can really help address the loss of life.</p>
+            <a href="/index/prediction" class="home-btn">TRY EWL PREDICTION</a>
+        </div>
+
+    </section>
+
+
+
+<!--JavaScript for Toggle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

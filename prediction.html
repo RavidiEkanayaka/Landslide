@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prediction</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}" media="screen,projection">
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src=".js/init.js"></script>
+  
+  <script>
+    function updateRangeInput(elem) {
+    $(elem).next().val($(elem).val());
+  }
+  </script>
+
+</head>
+
+<body background="{{ url_for('static', filename='images/ml-back.jpg') }}" style="background-repeat: no-repeat;">
+  <section class="sub-header5">
+
+    <nav>
+        <a href="/"><img src= "{{ url_for('static', filename='images/logo.png') }}" alt="logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="/">HOME</a></li>
+              <li><a href="about">ABOUT PROJECT</a></li>
+              <li><a href="landslide">LANDSLIDE</a></li>
+              <li><a href="history">HISTORY</a></li>
+              <li><a href="prediction" style="color: #964B00;">PREDICTION</a></li>
+              <li><a href="bot">SLOPEY</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  
+    </div>
+
+</section>
+
+  <h2 style="color: rgb(0, 0, 0); text-align: center; margin-top: 50px;">INPUT RAIN RECORDS <span style="color:#964B00;">HERE</span></h2>
+  <p style="color: rgb(179, 31, 31); text-align: center; margin-top: 50px;">
+    Please note that our landslide prediction results are not 100% accurate. 
+    <br> It's only applicable to areas identified as landslide-prone on our landslide page. 
+    <br> We recommend that you seek further updates after receiving our prediction results.</p>
+  <p style="color: rgb(179, 31, 31); text-align: center; margin-top: 30px; font-size: 20px;">*Important : You must input only <b>Continuous Rain</b> details</p>
+
+  <div class="row-set">
+    
+    <form action='/index/predict' method="POST" class="form-feild">
+      <div class="row-feild">
+
+        <div class="input-field-col">
+          <label for="first_name" style="font-size: 20px;"><b>Rain Days Per Month</span></b></label><br>        
+          <input class="range" type="range" value="0" min="0" max="31" oninput="updateRangeInput(this)" >
+          <input name='glass' type="text" value="0" class="count"> <br>
+       </div> <br><br>
+
+        <div class="input-field-col">
+          <label for="last_name" style="font-size: 20px;"><b>Rain Hours Per Day</span> </b></label><br>
+          <input class="range" type="range" value="0" min="0" max="24" oninput="updateRangeInput(this)" >
+          <input   name="plastic" type="text" value="0" class="count"> <br>
+        </div> <br><br>
+
+        <div class="input-field-col">
+          <label for="_name" style="font-size: 20px;"><b>Rain Type (Light=0, Moderate=1, Heavy=2, Very Heavy=3)</span></b></label><br>
+          <input class="range" type="range" value="0" min="0" max="3" oninput="updateRangeInput(this)">
+          <input  name="degrade" type="text"  value="0" class="count"> <br>
+       </div> <br><br>
+
+     </div>
+    <button type="submit" class="orange-btn">Predict Probability</button>
+   </form>
+ </div>
+
+    <br><p class="pred"><b>{{pred}}</b></p><br> 
+    </div>
+  </div>
+
+  </body>
+</html>
+

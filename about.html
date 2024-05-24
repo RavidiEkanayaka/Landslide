@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='font-awesome.min.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+   
+    <title>About Project</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="/"><img src= "{{ url_for('static', filename='images/logo.png') }}" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="about" style="color: #964B00;">ABOUT PROJECT</a></li>
+                    <li><a href="landslide">LANDSLIDE</a></li>
+                    <li><a href="history">HISTORY</a></li>
+                    <li><a href="prediction">PREDICTION</a></li>
+                    <li><a href="bot">SLOPEY</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <section class="about">
+        <h1>WHY DID WE GET INTO THIS </h1>
+        <p>Our project aims to create an early warning system for landslides by utilizing past landslide data and rainfall information. We believe that this project is crucial for the safety 
+            of individuals and communities living in areas prone to landslides. Landslides can cause devastating consequences, and early detection is key to minimizing the damage they can cause.
+             By developing this system, we hope to provide a valuable tool for individuals and organizations working to mitigate the risks associated with landslides. Our team is passionate 
+             about using technology to improve safety and protect lives, and we believe that this project is an important step towards achieving that goal.
+        </p><br><br><br>
+         
+        <h2>REAL WORLD EXAMPLES</h2>
+        <p>Here are a few real-world examples of landslides in Sri Lanka where there was no prediction beforehand: <br>
+            Aranayake Landslide (2016): In May 2016, a massive landslide occurred in the village of Aranayake in Kegalle district, killing over 100 people and leaving hundreds homeless. The disaster was caused by heavy rains, but there were no landslide predictions beforehand. <br><br>
+            Koslanda Landslide (2014): In October 2014, a massive landslide occurred in the village of Koslanda in Badulla district, killing over 30 people and leaving dozens missing. There were no landslide predictions made beforehand, and the disaster was triggered by heavy rains. <br><br>
+            These examples illustrate the need for early warning systems and predictive models for landslides in Sri Lanka. By using past landslide and rainfall data, it may be possible to develop models that can predict when and where landslides are likely to occur, and take measures to prevent or mitigate their impact. <br><br>
+        </p><br><br><br>
+       
+        <h1>WHAT IS <span style="color: #964B00;"> SLOPEY </span></h1>
+        <p>The pre-defined chatbot created to assist you with all your queries related to landslide management. Slopey uses advanced Bag of Words model with Java script to understand and respond 
+            to your questions with precision and accuracy. Powered by Flask API, Slopey is designed to provide quick and relevant responses to your queries. With its extensive knowledge about landslide
+             management, Slopey can help you with all your concerns related to this important issue. Its user-friendly interface makes it easy for you to navigate and find the information you need. So, 
+             if you have any questions related to landslide management, just ask Slopey and get instant and reliable answers. Let Slopey be your go-to chatbot for all your landslide management queries.
+        </p><br><br><br>
+
+        <h1> HOW <span style="color: #964B00;">PREDICTION</span> WORKS </h1>
+        <p>The code is a Flask API endpoint that receives a POST or GET request with integer features. These features are converted to a numpy array, which is passed to a pre-trained machine learning model 
+            for landslide prediction. The model predicts the probability of a landslide occurring in the given area, and if the probability is greater than 0.5, the code returns landslie warning.
+        </p><br><br><br>
+
+        <h1>KEY FEATURES</h1>
+        <p> ◦	Designed to be user-friendly and easy to use. <br><br>
+            ◦	The chatbot helps get knowledge about landslide. <br><br>
+            ◦	Advices are given to reduce landslide. <br><br>
+            ◦	Helps in learning the basics things about landslide.<br><br>
+            ◦	Provides low response time and mention emergency service support.<br><br>
+            ◦	This prediction helps to guess landslide will happen or not.
+        </p><br><br><br>
+
+        <h1>FUTURE <span style="color: #964B00;">EW-Lanslide Web</span></h1>
+        <p>We plan to improve this system further. <br>
+            ◦	We try to improve out prediction accuracy. <br><br>
+            ◦	It is also planning to fix some bugs in this system and create a more effective system than the current system. <br><br>
+            ◦	We currently implementing this system through a web page. But most of the people are used to doing everything by mobile. Therefore, We hope to present this system through a mobile app. There anyone will be able to connect with this at any time.</p><br><br><br>
+        
+    </section>
+</body>
+</html>
