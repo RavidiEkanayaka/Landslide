@@ -1,0 +1,118 @@
+{
+        "intents": [{
+                        "tag": "greeting",
+                        "patterns": ["Hi", "Hello", "hii", "Hola", "hiii"],
+                        "responses": ["Hello there, I'm Slopey. I can help you with Landslide Management. <br/> So what you want to know about first?<br/><br/>*Type 'guide' to access all the content of the Slopey"],
+                        "context_set": ""
+                },
+                {
+                        "tag": "guidline",
+                        "patterns": ["guide"],
+                        "responses": ["Guidline<br/>*Type these keywords to access all the features of Green-Bot.<br/><br/> Slopey - To find how the chatbot works.<br/> Ladnslide - To find what is landslide means.<br/>History - To find landslide history in sri lanka.<br/><br/>Rain - To find rainfall categories.<br/>Soil - To find soil types around landslide areas.<br/>Human - To find how human interact to landslide.<br/>Reduce - To understand how to reduce landslide.<br/>Ready - To understand how to face landslide incident<br/>Emergency - To find emergency services"],
+                        "context_set": ""
+                },
+                {
+                        "tag": "about slopey",
+                        "patterns": ["slopey", "about slopey"],
+                        "responses": ["Introducing Slopey <br/> The pre-defined chatbot created to assist you with all your queries related to landslide management. Slopey uses advanced Bag of Words model with Java script to understand and respond to your questions with precision and accuracy. Powered by Flask API, Slopey is designed to provide quick and relevant responses to your queries. With its extensive knowledge about landslide management, Slopey can help you with all your concerns related to this important issue. Its user-friendly interface makes it easy for you to navigate and find the information you need. So, if you have any questions related to landslide management, just ask Slopey and get instant and reliable answers. Let Slopey be your go-to chatbot for all your landslide management queries."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "About Landslide",
+                        "patterns": ["landslide"],
+                        "responses": ["Landslides are geological phenomena that occur when masses of rock, earth, or debris move down a slope under the force of gravity. They can happen in any part of the world, and are often triggered by natural events such as heavy rain, earthquakes, volcanic activity, and changes in the water level of rivers or oceans. If you want to know about more please visit <a href='http://127.0.0.1:5000/index/landslide' target='_blank'>Landslide</a>"],
+                        "context_set": ""
+                }, 
+                {
+                        "tag": "About Sri lankan landslide History",
+                        "patterns": ["history"],
+                        "responses": ["Sri Lanka has a long history of landslides, with the first recorded major event occurring in 1845. Since then, landslides have affected many areas of the country, particularly in the central highlands and in the south-western region. In recent years, the frequency and intensity of landslides in Sri Lanka have increased due to factors such as deforestation, construction on unstable slopes, and heavy rainfall associated with climate change. If you want to know more about Sri Lankan Landslide History please visit <br/><a href='http://127.0.0.1:5000/index/history' target='_blank'>History</a>. We addes so much information there. "],
+                        "context_set": ""
+                },
+                {
+                        "tag": "About Prediction",
+                        "patterns": ["prediction"],
+                        "responses": ["Sri Lanka has a long history of landslides, with the first recorded major event occurring in 1845. Since then, landslides have affected many areas of the country, particularly in the central highlands and in the south-western region. In recent years, the frequency and intensity of landslides in Sri Lanka have increased due to factors such as deforestation, construction on unstable slopes, and heavy rainfall associated with climate change. If you want to know more about Sri Lankan Landslide History please visit <br/><a href='http://127.0.0.1:5000/index/history' target='_blank'>History</a>. We addes so much information there. "],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Not Landslide",
+                        "patterns": ["1%", "2%", "3%", "4%","5%","6%","7%","8%","9%","10%","11%","12%","13%","14%","15%","16%","17%","18%","19%","20%","21%","22%","23%","24%","25%","26%","27%","28%","29%","30%","31%","32%","33%","34%","35%"],
+                        "responses": ["Important:<br/><br/>Based on our analysis, there is currently no threat of landslides in your area. <br/><br/>Here are some tips to reduce landslide risk in your area:<br/>Avoid modifying slopes without professional advice<br/>Plant vegetation to stabilize slopes<br/>Divert water away from slopes<br/> Monitor slope stability regularly<br/><br/> Thank you for using our service."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "landslide",
+                        "patterns": ["36%", "37%", "38%", "39%","40%","41%","42%","43%","44%","45%","46%","47%","48%","49%","50%","51%","52%","53%","54%","55%","56%","57%","58%","59%","60%","61%","62%","63%","64%","65%","66%","67%","68%","69%","70%"],
+                        "responses": ["Important:<br/> Based on our landslide prediction, your area is currently at risk. <br/><br/>If landslide happens here are some tips to follow during a landslide:<br/>Move to higher ground immediately <br/>Stay away from rivers and streams<br/> Avoid steep slopes<br/> Watch for signs of movement <br/>Turn off utilities<br/> Stay informed by monitoring local news and updates. <br/><br/>Thank you."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "rainfallments",
+                        "patterns": ["rain"],
+                        "responses": ["In Sri Lanka, rainfall is categorized into four main categories based on the amount of rainfall received in a given time period:<br/><br/>Light rainfall: Less than 10 mm of rain per hour.<br/>Moderate rainfall: Between 10-30 mm of rain per hour.<br/>Heavy rainfall: Between 30-75 mm of rain per hour.<br/>Very heavy rainfall: More than 75 mm of rain per hour.<br/><br/>These categories are used by the <a href='http://www.meteo.gov.lk/index.php?option=com_contact&view=contact&id=1&Itemid=141&lang=en' target='_blank'>Department of Meteorology</a> in Sri Lanka to issue weather warnings and forecasts to the public.<br/><br/> For more details visit <a href='http://127.0.0.1:5000/index/landslide' target='_blank'>LANDSLIDE</a> page."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Soil Type",
+                        "patterns": ["soil"],
+                        "responses": ["The soil types in Sri Lankan landslide areas can vary, but typically they include:<br/><br/>Colluvial soil<br/>Alluvial soil<br/>Residual soil<br/>Lateritic soil<br/>Red-yellow podzolic soil<br/>Regosol soil<br/><br/>These soil types can contribute to the instability of slopes and increase the likelihood of landslides in the affected areas.<br/><br/> For more details visit <a href='http://127.0.0.1:5000/index/landslide' target='_blank'>LANDSLIDE</a> page."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "human interaction",
+                        "patterns": ["human"],
+                        "responses": ["Human activities can significantly contribute to the occurrence and severity of landslides in various ways:<br/><br/>Deforestation<br/>Construction and excavation<br/>Poor land-use planning<br/>Irrigation and drainage systems<br/>Overgrazing.<br/><br/>If you want to know more about those topics please visit <a href='http://127.0.0.1:5000/index/landslide' target='_blank'>Landslide</a> page."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Reduce",
+                        "patterns": ["reduce"],
+                        "responses": ["Here are some pieces of advice to prevent landslides:<br/><br/>Identify and Map Landslide-Prone Areas<br/>Implement Land-Use Planning<br/>Implement Slope Stabilization Measures<br/>Install Drainage Systems<br/>Conduct Regular Inspections<br/>Regularly check local government alerts and warnings.<br/><br/>For more details visit <a href='http://127.0.0.1:5000/index/landslide' target='_blank'>LANDSLIDE</a> page."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Ready",
+                        "patterns": ["ready"],
+                        "responses": ["Evacuate immediately.<br/>Stay alert<br/>Be prepared<br/>Avoid danger zones<br/>Monitor the situation<br/>Follow official advice<br/><br/>If you want to know more about those topics please visit <a href='http://127.0.0.1:5000/index/landslide' target='_blank'>Landslide</a> page."],
+                        "context_set": ""
+                },
+                
+                {
+                        "tag": "Emergency Srvices",
+                        "patterns": ["emergency"],
+                        "responses": ["Emergancy Services<br/><br/><a href='http://www.dmc.gov.lk/index.php?lang=en'>Disaster Management Center (DMC)</a> : <a href='tel:117'>117</a><br/> <a href='https://www.police.lk/'>Sri Lanka Police</a> : <a href='tel:119'>119</a><br/> <a href='https://www.army.lk/'>Sri Lanka Army</a> : <a href='tel:118'>118</a><br/> <a href='https://www.airforce.lk/contact_us.php'>Sri Lanka Air Force</a> : <a href='tel:116'>116</a><br/> <a href='https://www.nbro.gov.lk/index.php?lang=en'>National Building Research Organization (NBRO)</a> : <a href='tel:1987'>1987</a>"],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Koslanda",
+                        "patterns": ["reuse"],
+                        "responses": ["Reuse !<br/>Reuse is the action or practice of using an item, whether for its original purpose or to fulfill a different function. It should be distinguished from recycling, which is the breaking down of used items to make raw materials for the manufacture of new products.<br/><br/>What are the Benefits of Reusing ?<br/>Reuse encourages innovative, low cost, flexible, and local solutions to waste management. Communities benefit from avoided landfilling and transportation costs associated with shipping waste or recyclables out of the area. Reduced waste and transportation costs also translate into reduced pollution.<br/><br/>How can reusing help the environment ?<br/>Reuse provides an excellent, environmentally-preferred alternative to other waste management methods, because it reduces air, water and land pollution, limits the need for new natural resources, such as timber, petroleum, fibers and other materials.<br/><br/>Top 5 Ways to Reuse and Recycle at Home !<br/>Repurpose Glass, Plastic and Cardboard Containers.<br/>Design a e a Kitchen Drawer for Plastic Bags.<br/>Reuse your Home Delivered Newspaper.<br/>Supply Artists with Creative Materials.<br/>Convert Old Sheets, Towels and Clothing into Wash Rags."],
+                        "context_set": ""
+                }, 
+                {
+                        "tag": "Haldummulla",
+                        "patterns": ["income"],
+                        "responses": ["Can you make Money in Waste Management ?<br/><br/>Earning money through waste is not that difficult. There are several large disposal companies on the stock market, whether for regular household waste to particular waste, such as hospitals, chemical laboratories, or even heavy industry.<br/><br/>What is the most Profitable Material to recycle ?<br/>scrap metal.scrap metal, is widely considered the most profitable material in regard to recycling. Of metal products, steel is the most commonly recycled metallic material. Metals to be recycled are commonly found in old household appliances, cars, and construction materials.<br/><br/>Can you make Money from Recycling Plastic ?<br/>You can make money from recycling plastic in lots of different ways. There are many recycling centres and schemes that offer credit or cash for recyclable materials, including household plastic, paper and cardboard, as well as larger industrial and commercial recyclable waste."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Rathnapura",
+                        "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+                        "responses": ["That's all right :)", "You're welcome.", "That's all right."],
+                        "context_set": ""
+                },
+                {
+                        "tag": "Bogawanthalawa",
+                        "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+                        "responses": ["That's all right :)", "You're welcome.", "That's all right."],
+                        "context_set": ""
+                }, 
+                {
+                        "tag": "goodbye",
+                        "patterns": ["bye", "See you later", "Goodbye", "I am Leaving"],
+                        "responses": ["Bye Bye !", "Have a nice day :)", "Goodbye!"],
+                        "context_set": ""
+                }
+        ]
+}
